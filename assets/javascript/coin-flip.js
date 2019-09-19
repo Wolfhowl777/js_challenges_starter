@@ -1,9 +1,15 @@
-(function(){
+(function () {
 
-    //outputs string to the body of the document
-    document.write("hello from coin-flip.js");
+    let whatDoYouTHink = prompt("heads or tails?")
+    let coinFlipper = document.querySelector("#coinFlipper")
 
-    //outputs the string to the browsers console
-    console.log("hello from coin-flip.js");
+    coinFlipper.addEventListener("click", function () {
+        if (Math.random() > .5) {
+            console.log("heads");
+        } else {
+            console.log("tails");
+        }
+
+    })
 
 })();
