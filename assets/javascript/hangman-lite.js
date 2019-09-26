@@ -1,18 +1,21 @@
 
-(function (){
-
-    let word = 'Space'
-    let letter = 'a'
+(function () {
 
     var str = "space";
 
-    function count(string,char) {
-    var re = new RegExp(char, "gi");
-    return string.match(re).length;
+    function count(string, char) {
+        let re = new RegExp(char, "g");
+        let match = string.match(re);
+        // console.log(match)
+        
+        if(match  ===  null){
+            return 0
+        }
+
+        return match.length
     }
-    document.write("hello from hangman-lite.js");
+
+    console.log(count(str, "a") )
 
 
-var str = "space";
-console.log(count(str, 'a'));
 })();
