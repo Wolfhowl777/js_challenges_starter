@@ -2,7 +2,7 @@ let str = "eyejklje"
 
 
 
-function ed(inStr) {
+function palindrome(inStr) {
     console.log(inStr)
     for (let i = 0; i< inStr.length; i=i+1) {
         console.log(inStr[i])
@@ -13,4 +13,4 @@ function ed(inStr) {
     }
     return true;
 }
-console.log (ed(str));
+console.log (palindrome(str));

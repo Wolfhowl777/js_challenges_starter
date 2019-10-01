@@ -1,7 +1,7 @@
 
 (function () {
 
-    var str = "space";
+    var str = "spaceman";
 
     function count(string, char) {
         let re = new RegExp(char, "g");
@@ -14,8 +14,9 @@
 
         return match.length
     }
-
-    console.log(count(str, "a") )
+    let letter = 'a'
+    let letterCount = count(str, letter)
+    console.log("Yeah, the letter " + letter +" exists "+letterCount+" times in my word") 
 
 
 })();
